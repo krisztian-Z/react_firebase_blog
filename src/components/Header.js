@@ -2,10 +2,8 @@ import React from "react";
 import { Link } from "react-router-dom";
 import transitions from "bootstrap/dist/js/bootstrap.bundle";
 
-const Header = ({ active, setActive, user , handleLogout}) => {
+const Header = ({ active, setActive, user, handleLogout }) => {
   const userId = user?.uid;
-  // console.log("userId", userId);
-  // console.log("name", user?.displayName);
 
   return (
     <nav className="navbar navbar-expand-lg navbar-light bg-light">
@@ -23,10 +21,19 @@ const Header = ({ active, setActive, user , handleLogout}) => {
             <span className="fa fa-bars"></span>
           </button>
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul
-              className="navbar-nav me-auto mb-2 mb-lg-0"
-            
-            >
+            <div className="profile-logo">
+              <img
+                src="./images/solent_logo.jpg"
+                alt="Logo"
+                style={{
+                  width: "50px", 
+                  height: "50px",
+                  borderRadius: "50%",
+                  marginTop: "12px",
+                }}
+              />
+            </div>
+            <ul className="navbar-nav me-auto mb-2 mb-lg-0">
               <Link to="/" style={{ textDecoration: "none" }}>
                 <li
                   className={`nav-item nav-link ${
@@ -64,7 +71,6 @@ const Header = ({ active, setActive, user , handleLogout}) => {
               <ul className="navbar-nav me-auto mb-2 mb-lg-0">
                 {userId ? (
                   <>
-                    {/* https://picsum.photos/200/300 */}
                     <div className="profile-logo">
                       <img
                         src="https://cdn-icons-png.flaticon.com/512/149/149071.png"
@@ -80,7 +86,6 @@ const Header = ({ active, setActive, user , handleLogout}) => {
                     <p style={{marginTop: "12px", marginLeft: "5px"}}>{user?.displayName}</p>
                     <li className="nav-item nav-link" onClick={handleLogout}>
                       Logout
-
                     </li>
                   </>
                 ) : (
@@ -105,3 +110,4 @@ const Header = ({ active, setActive, user , handleLogout}) => {
 };
 
 export default Header;
+

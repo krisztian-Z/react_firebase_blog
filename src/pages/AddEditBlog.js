@@ -22,6 +22,8 @@ const initialState = {
   trending: "",
   category: "",
   description: "",
+  comments: [],
+  likes: []
 };
 
 const categoryOptions = [
@@ -43,15 +45,6 @@ const AddEditBlog = ({ user, setActive }) => {
   const navigate = useNavigate();
 
   const { title, tags, trending, category, description } = form;
-
-  // const getBlogDetail = async () => {
-  //   const docRef = doc(db, "solent-students-blogs", id);
-  //   const snapshot = await getDoc(docRef);
-  //   if (snapshot.exists()) {
-  //     setForm({ ...snapshot.data() });
-  //   }
-  //   setActive(null);
-  // };
 
   useEffect(() => {
     const uploadFile = () => {
@@ -101,17 +94,16 @@ const AddEditBlog = ({ user, setActive }) => {
       }
       setActive(null);
     };
-  
+
     id && getBlogDetail();
   }, [id, setActive]);
-  
-  
+
   const handleChange = (e) => {
     setForm({ ...form, [e.target.name]: e.target.value });
   };
 
-  const handleTags = (newTags) => {
-    setForm({ ...form, tags: newTags });
+  const handleTags = (tags) => {
+    setForm({ ...form, tags});
   };
 
   const handleTrending = (e) => {

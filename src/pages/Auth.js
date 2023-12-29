@@ -1,5 +1,9 @@
 import React, { useState } from "react";
-import { createUserWithEmailAndPassword, signInWithEmailAndPassword, updateProfile } from "firebase/auth";
+import {
+  createUserWithEmailAndPassword,
+  signInWithEmailAndPassword,
+  updateProfile,
+} from "firebase/auth";
 import { toast } from "react-toastify";
 import { auth } from "../firebase";
 import { useNavigate } from "react-router-dom";
@@ -12,7 +16,7 @@ const initialState = {
   confirmPassword: "",
 };
 
-const Auth = ({ setActive }) => {
+const Auth = ({ setActive, setUser }) => {
   // State to manage form fields and sign-up/sign-in toggle
   const [state, setState] = useState(initialState);
   const [signUp, setSignUp] = useState(false);
@@ -36,7 +40,12 @@ const Auth = ({ setActive }) => {
       // Sign in logic
       if (!signUp) {
         if (email && password) {
-          const { user } = await signInWithEmailAndPassword(auth, email, password);
+          const { user } = await signInWithEmailAndPassword(
+            auth,
+            email,
+            password
+          );
+          setUser(user);
           setActive("home");
           navigate("/");
         } else {
@@ -49,22 +58,28 @@ const Auth = ({ setActive }) => {
           toast.error("Passwords don't match!");
         }
         if (firstName && email && password) {
-          const { user } = await createUserWithEmailAndPassword(auth, email, password);
+          const { user } = await createUserWithEmailAndPassword(
+            auth,
+            email,
+            password
+          );
           await updateProfile(user, { displayName: `${firstName}` });
           setActive("home");
           navigate("/");
-          toast.success('Sign-up successful! Please sign in.');
+          toast.success("Sign-up successful! Please sign in.");
         } else {
           toast.error("All fields are mandatory!");
         }
       }
     } catch (error) {
-      console.error('Authentication error:', error.message);
+      console.error("Authentication error:", error.message);
 
-      if (error.code === 'auth/email-already-in-use') {
-        toast.error('Email address is already in use. Please sign in or use a different email.');
+      if (error.code === "auth/email-already-in-use") {
+        toast.error(
+          "Email address is already in use. Please sign in or use a different email."
+        );
       } else {
-        toast.error('Error during authentication. Please try again.');
+        toast.error("Error during authentication. Please try again.");
       }
     }
   };
