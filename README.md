@@ -1,3 +1,24 @@
+# Solent Student Blog app
+
+## Installation
+
+### 1. Clone the repository:
+
+`git clone https://github.com/krisztian-Z/react_firebase_blog.git`
+
+### 2. Change into the project directory if not there:
+
+`cd student-blog-app`
+
+### 3. Install dependencies:
+`npm install`
+    
+### 4. Start the development server:
+`npm start`
+
+
+
+
 ## Tags
 - to make them looks like tags, press enter after writing the tag!
 

@@ -5,7 +5,7 @@ const AboutPage = () => {
   return (
     <div className="about-container">
       <header>
-        <h1>About Solent Students Blogs App</h1>
+        <h1>About Solent Students Blog App</h1>
       </header>
 
       <div className="about-section">
@@ -84,7 +84,7 @@ const AboutPage = () => {
       </div>
 
       <footer>
-        &copy; 2023 Solent Students Blogs App
+        &copy; 2023 Solent Students Blog App
       </footer>
     </div>
   );
