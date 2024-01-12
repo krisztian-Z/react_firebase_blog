@@ -17,6 +17,106 @@
 `npm start`
 
 
+### 5. Folder Structure
+
+```
+└─ .
+   ├─ .firebase
+   │  └─ hosting.YnVpbGQ.cache
+   ├─ .firebaserc
+   ├─ build
+   │  ├─ asset-manifest.json
+   │  ├─ favicon.ico
+   │  ├─ images
+   │  │  ├─ firebase.png
+   │  │  ├─ java.jpg
+   │  │  ├─ javaScript.png
+   │  │  ├─ nodejs.png
+   │  │  ├─ notFound.jpg
+   │  │  ├─ python.png
+   │  │  ├─ react.png
+   │  │  └─ solent_logo.jpg
+   │  ├─ index.html
+   │  ├─ logo192.png
+   │  ├─ logo512.png
+   │  ├─ manifest.json
+   │  ├─ robots.txt
+   │  └─ static
+   │     ├─ css
+   │     │  ├─ main.368f6937.css
+   │     │  └─ main.368f6937.css.map
+   │     ├─ js
+   │     │  ├─ 787.f99b1002.chunk.js
+   │     │  ├─ 787.f99b1002.chunk.js.map
+   │     │  ├─ main.fef1721c.js
+   │     │  ├─ main.fef1721c.js.LICENSE.txt
+   │     │  └─ main.fef1721c.js.map
+   │     └─ media
+   │        ├─ bootstrap-icons.64ed46b247405068ca60.woff2
+   │        └─ bootstrap-icons.66b7720f4a230f1b0341.woff
+   ├─ documentation.md
+   ├─ firebase.json
+   ├─ package-lock.json
+   ├─ package.json
+   ├─ public
+   │  ├─ favicon.ico
+   │  ├─ images
+   │  │  ├─ firebase.png
+   │  │  ├─ java.jpg
+   │  │  ├─ javaScript.png
+   │  │  ├─ nodejs.png
+   │  │  ├─ notFound.jpg
+   │  │  ├─ python.png
+   │  │  ├─ react.png
+   │  │  └─ solent_logo.jpg
+   │  ├─ index.html
+   │  ├─ logo192.png
+   │  ├─ logo512.png
+   │  ├─ manifest.json
+   │  └─ robots.txt
+   ├─ README.md
+   └─ src
+      ├─ App.css
+      ├─ App.js
+      ├─ App.test.js
+      ├─ components
+      │  ├─ BlogSection.js
+      │  ├─ Card.js
+      │  ├─ Category.js
+      │  ├─ CommentBox.js
+      │  ├─ Header.js
+      │  ├─ LikeButton.js
+      │  ├─ Popular.js
+      │  ├─ RelatedBlog.js
+      │  ├─ Scroll.js
+      │  ├─ Search.js
+      │  ├─ Spinner.js
+      │  ├─ TagBlog.js
+      │  ├─ Tags.js
+      │  ├─ Trending.js
+      │  └─ UserComments.js
+      ├─ firebase.js
+      ├─ index.css
+      ├─ index.js
+      ├─ logo.svg
+      ├─ media-query.css
+      ├─ pages
+      │  ├─ About.css
+      │  ├─ About.js
+      │  ├─ AddEditBlog.js
+      │  ├─ Auth.js
+      │  ├─ CategoryBlog.js
+      │  ├─ Detail.js
+      │  ├─ Home.js
+      │  └─ NotFound.js
+      ├─ reportWebVitals.js
+      ├─ setupTests.js
+      ├─ style.scss
+      └─ utility
+         └─ index.js
+
+```
+
 
 
 ## Tags
