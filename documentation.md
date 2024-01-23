@@ -1,12 +1,44 @@
-# Solent Students Blog
-### Software Implementation and Report
+ 
+# <h1 text align=center>Solent University</h1>
 
-•	Name (student number): Cristinel Zgone (10180120)
-•	Link to the hosted website: https://solentstudentblog.web.app/
-•	Link to the Git Repository: https://github.com/krisztian-Z/react_firebase_blog.git
+---
+<br><br>
+<h1 text align=center>Contemporary Web Application</h1>
+<h2 text align=center>Solent Student Blog Report<br>AE2(70%)</h2>
+<br><br>
+<h2 text align=center><strong>Cristinel Zgone</strong></h2>
+<h3 text align=center>University ID: 10180120</h3>
+<br><br><br>
+<br><br><br>
 
+<div style="text-align: left; margin-left: 50px">
+  <div style="display: inline-block; text-align: left;">
+    <strong>Academic Year:</strong> 2023-2024<br>
+    <strong>Module Tutor:</strong> Jubril Adigun<br>
+    <strong>Individual/Group:</strong> Implementation and Report<br>
+    <strong>Restrictions on Time/Word Count:</strong> 1500 Words<br>
+    <strong>Link to the hosted website:</strong> https://solentstudentblog.web.app/<br>
+    <strong>Git Repository:</strong> https://github.com/krisztian-Z/react_firebase_blog.git<br>
+  </div>
+</div>
 
-### Introduction:
+<br><br><br>
+<br><br>
+
+# Table of Content
+---
+- [Solent University ](#solent-university)
+- [Table of Content](#table-of-content)
+- [Introduction](#introduction)
+- [Methodology](#methodology)
+- [Methods](#methods)
+- [Pages](#pages)
+- [Conclusion](#conclusion)
+
+<br><br>
+
+# Introduction:
+---
 Solent Students Blog is an online platform destinated for Solent's University students and not only, who are interested and passioned about programming languages. On this platform, the students have the opportunity to create blogs sharing their experiences, reaserch and knowledges related to programming languages  with the entire community. They are able to share information about the programming languages they have studied during their academic years, but also using the option 'Other' , can write and share other thoughts related to Solent University academic journey.
 
 
@@ -32,7 +64,10 @@ The first assessment identified the requirment for a in-house platform where Sol
 
 Brief, the blog website is delivered as a solution to the identified issue by presenting a user-friendly interface, content categorization, and great features to increase the overall experience for Solent University students. This platform target is to build up the sense of students and programming languages community, collaboration, and knowledge interchange between the Solent's student.
 
-## Overarching methodology
+<br><br>
+
+# Methodology
+---
 The overarching methodology for the development and maintenance of the Solent Student Blog  platform is associated with a systematic and constant approach, mixing high-tech considerations with user experience improvement. The methodology can be defined in few key phases:
 
 1. **Requirements Gathering:**
@@ -63,8 +98,11 @@ The overarching methodology for the development and maintenance of the Solent St
 
 
 By following this methodology, the development and maintenance of the Solent University student blog can be a active and responsive process, guarantee that the platform remains pertinent, user-friendly, and aligned with the progress needs of the student community.
+<br><br>
 
-## Methods 
+# Methods 
+---
+
 To perform an intelligent evaluation of the Solent Student Blog platform, it was crucial to use diverse data collection methods that contribute with a complete understanding of user experiences, preferences, and provocations. The chosen methods it is align with the targets of the evaluation and protect the collection of essential and actionable observations. Here are few conclusive data collection methods for evaluating the result:
 
 1. **User Surveys:**
@@ -79,8 +117,6 @@ To perform an intelligent evaluation of the Solent Student Blog platform, it was
    - **Justification:** Usability testing engage watching the users  when they interact with the website to find potential usability problems and some operations that can be improved. This method is necessary for analysing the effectiveness of the user interface.
    - **Implementation:** Create usability testing sessions with users, telling them to execute specific tasks on the website. Analyse their synergy, note areas where they struggled, and get a feedback on the overall user experience.
 
-
-
 4. **A/B Testing:**
    - **Justification:** A/B testing it means to present different versions of the app to different users/students to tell which  version performs better in terms of user engagement.
    - **Implementation:** Conduct A/B testing on different features or design fundamentals, analyzing the execution of each alternative to make the best decisions on the platform's overall design and functionality.
@@ -88,8 +124,10 @@ To perform an intelligent evaluation of the Solent Student Blog platform, it was
 
 
 By mixing these data collection methods, the decision can offer a better understanding of user opionions, behaviors, and areas that can be improved. It's crucial to triangulate data from multiple method sources to derive overall understanding and make informed decisions for enhancing the Solent University student blog website.
+<br><br>
 
-## Application's Pages:
+# Pages
+---
 
 **About page:**
 For this page a css page has been created, and js file is actually giving information regarding the University contact. 
@@ -203,8 +241,10 @@ Pagination is implemented to fetch more blogs when the user clicks the "Load Mor
 **App.js :**
 
 App.js is the main entry point for the React application. It sets up the overall structure of the application, defines the routes using React Router, and manages the authentication state.
+<br><br>
 
-## Conclusion and Results:
+# Conclusion and Results:
+---
 
 Solent Student Blog's development and implementation platform have successfully addressed the meaningful need for a customised platform for Solent University students to share their experiences, ideas and knowledge related to programming languages. The platform's key features, as user registration, blog creation and updating, tagging, and search capabilities, likes and comment have contributed to building an active and collegial online group.
 
@@ -234,7 +274,9 @@ While the platform it might achieve a significant success, it is mandatory to re
 
 3. **Community Building:**
    - While the platform will successfully rise a sense of community, continuing efforts should be made to motivate and inspire more user interactions, chats, and collaborations within the Solent University student platform.
+<br> <br>
 
-**Conclusion:**
+# Conclusion
+---
 
 In conclusion, the Solent Student Blog has successfully addressed the initial problem statement by offering a platform that inspire knowledge sharing and community building amid Solent University students. The positive feedback and user bond might indicate the platform's importance and purpose within the university. For the feature, a promise to addressing identified threats and continuously enhancing the platform will be mandatory to sustaining its possibly success and further improvements the user experience at Solent University.
