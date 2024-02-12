@@ -201,7 +201,7 @@ const AddEditBlog = ({ user, setActive }) => {
                     onChange={handleTrending}
                   />
                   <label htmlFor="radioOption" className="form-check-label">
-                    No;
+                    No
                   </label>
                 </div>
               </div>
