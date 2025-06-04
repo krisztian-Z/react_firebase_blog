@@ -22,7 +22,7 @@ import UserComments from "../components/UserComments";
 import CommentBox from "../components/CommentBox";
 import LikeButton from "../components/LikeButton";
 import Spinner from "../components/Spinner";
-import './Detail.css';
+
 
 
 const Detail = ({ setActive, user }) => {
