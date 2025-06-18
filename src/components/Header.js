@@ -21,18 +21,17 @@ const Header = ({ active, setActive, user, handleLogout }) => {
             <span className="fa fa-bars"></span>
           </button>
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
-            <div className="profile-logo">
-              <img
-                src="/images/solent_logo.jpg"
-                alt="Logo"
-                style={{
-                  width: "50px",
-                  height: "50px",
-                  borderRadius: "50%",
-                  marginTop: "12px",
-                }}
-              />
-            </div>
+            <img
+              src={`${process.env.PUBLIC_URL}/images/logo.jpg`}
+              alt="Logo"
+              style={{
+                width: "50px",
+                height: "50px",
+                borderRadius: "50%",
+                marginTop: "12px",
+              }}
+            />
+
             <ul className="navbar-nav me-auto mb-2 mb-lg-0">
               <Link to="/" style={{ textDecoration: "none" }}>
                 <li
