@@ -3,7 +3,8 @@ import React from 'react'
 const NotFound = () => {
   return (
     <div>
-      <img src="/images/notFound.jpg" alt="Page not found" />
+      <img src={`${process.env.PUBLIC_URL}/images/notFound.jpg`} alt="Page not found" />
+
     </div>
   )
 }
