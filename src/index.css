@@ -9,3 +9,11 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+/*remove underline links in owl*/
+.owl-theme .item a,
+.owl-theme .item a:visited,
+.owl-theme .item a:hover,
+.owl-theme .item a:focus {
+  text-decoration: none !important;
+  color: inherit !important;
+}

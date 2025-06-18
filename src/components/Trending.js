@@ -6,10 +6,8 @@ import 'owl.carousel/dist/assets/owl.theme.default.css';
 
 const Trending = ({ blogs }) => {
   useEffect(() => {
-    // Your data fetching or side effects logic here
-    // This will be called when the component mounts and whenever the 'blogs' prop changes
-    // Replace the comment above with your actual logic
-  }, [blogs]); // Depend on 'blogs' to trigger the effect when it changes
+    
+  }, [blogs]); 
 
   const options = {
     loop: true,

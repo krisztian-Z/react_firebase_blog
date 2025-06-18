@@ -98,33 +98,32 @@ const Detail = ({ setActive, user }) => {
     setComments(comments);
     setUserComment("");
   };
- const handleLike = async () => {
-  if (userId) {
-    if (blog?.likes) {
-      const index = likes.findIndex((id) => id === userId);
-      if (index === -1) {
-        likes.push(userId);
-        setLikes([...new Set(likes)]);
-      } else {
-        likes = likes.filter((id) => id !== userId);
-        setLikes(likes);
+  const handleLike = async () => {
+    if (userId) {
+      if (blog?.likes) {
+        const index = likes.findIndex((id) => id === userId);
+        if (index === -1) {
+          likes.push(userId);
+          setLikes([...new Set(likes)]);
+        } else {
+          likes = likes.filter((id) => id !== userId);
+          setLikes(likes);
+        }
       }
+      await updateDoc(doc(db, "solent-students-blogs", id), {
+        ...blog,
+        likes,
+        timestamp: serverTimestamp(),
+      });
     }
-    await updateDoc(doc(db, "solent-students-blogs", id), {
-      ...blog,
-      likes,
-      timestamp: serverTimestamp(),
-    });
-  }
-};
+  };
 
   return (
     <div className="single">
-      <div
-        className="blog-title-box"
-        style={{ backgroundImage: `url('${blog?.imgUrl}')` }}
-      >
+      <div className="blog-header-image-wrapper">
+        <img src={blog?.imgUrl} alt="logo" className="blog-header-logo" />
       </div>
+
       <div className="container-fluid pb-4 pt-4 padding blog-single-content">
         <div className="container padding">
           <div className="row mx-0">
@@ -145,18 +144,20 @@ const Detail = ({ setActive, user }) => {
               <br />
               <div className="custombox">
                 <div className="scroll">
-                <h4 className="small-title">{comments?.length} Comments</h4>
-                {isEmpty(comments) ? (
-                  <UserComments
-                    msg={"No comments yet for this blog. Feel free to comment."}
-                  />
-                ) : (
-                  <>
-                    {comments.map((comment) => (
-                      <UserComments {...comment} />
-                    ))}
-                  </>
-                )}
+                  <h4 className="small-title">{comments?.length} Comments</h4>
+                  {isEmpty(comments) ? (
+                    <UserComments
+                      msg={
+                        "No comments yet for this blog. Feel free to comment."
+                      }
+                    />
+                  ) : (
+                    <>
+                      {comments.map((comment) => (
+                        <UserComments {...comment} />
+                      ))}
+                    </>
+                  )}
                 </div>
               </div>
               <CommentBox
