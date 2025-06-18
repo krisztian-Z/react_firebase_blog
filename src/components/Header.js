@@ -23,10 +23,10 @@ const Header = ({ active, setActive, user, handleLogout }) => {
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <div className="profile-logo">
               <img
-                src="./images/solent_logo.jpg"
+                src="/images/solent_logo.jpg"
                 alt="Logo"
                 style={{
-                  width: "50px", 
+                  width: "50px",
                   height: "50px",
                   borderRadius: "50%",
                   marginTop: "12px",
@@ -79,11 +79,13 @@ const Header = ({ active, setActive, user, handleLogout }) => {
                           width: "30px",
                           height: "30px",
                           borderRadius: "50%",
-                          marginTop: "12px"
+                          marginTop: "12px",
                         }}
                       />
                     </div>
-                    <p style={{marginTop: "12px", marginLeft: "5px"}}>{user?.displayName}</p>
+                    <p style={{ marginTop: "12px", marginLeft: "5px" }}>
+                      {user?.displayName}
+                    </p>
                     <li className="nav-item nav-link" onClick={handleLogout}>
                       Logout
                     </li>
@@ -110,4 +112,3 @@ const Header = ({ active, setActive, user, handleLogout }) => {
 };
 
 export default Header;
-

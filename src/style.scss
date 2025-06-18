@@ -689,19 +689,76 @@ $yellow:#7ce7e4;
 }
 
 
+// Trending carousel fix
+.trending-img-absolute-1 {
+  min-height: 100px;
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 12px 10px;
+  background-color: #7d8ce3;
+  border-top: 1px solid #ddd;
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
+  color: white;
+  text-align: center;
 
+  span {
+    font-size: 15px;
+    font-weight: 600;
+  }
 
+  .trending-meta-info {
+    font-size: 13px;
+    opacity: 0.9;
+    margin-top: 4px;
+  }
+}
 
+// Carousel responsiveness fix
+@media (max-width: 768px) {
+  .trending-img-size {
+    height: auto;
+  }
 
+  .trending-img-size img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+  }
 
+  .trending-img-position {
+    min-height: auto;
+  }
+}
 
+// Daily Blogs fix (for image size/alignment)
+@media (max-width: 992px) {
+  .blogs-img {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
+    img {
+      width: 100%;
+      height: auto;
+      max-height: 140px;
+      object-fit: contain;
+    }
+  }
 
+  .hover-blogs-img {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
 
-
-
-
-
-
-
-
+// Optional: ensure titles wrap nicely and maintain height
+.trending-img-absolute-1 span {
+  white-space: normal;
+  line-height: 1.2;
+}
