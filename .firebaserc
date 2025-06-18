@@ -1,0 +1,8 @@
+{
+  "projects": {
+    "default": "solentstudentblog",
+    "main": "solentstudentblog"
+  },
+  "targets": {},
+  "etags": {}
+}

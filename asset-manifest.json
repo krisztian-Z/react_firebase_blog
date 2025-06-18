@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/react_firebase_blog/static/css/main.23b97ab5.css",
+    "main.js": "/react_firebase_blog/static/js/main.2f971ea9.js",
+    "static/js/787.f99b1002.chunk.js": "/react_firebase_blog/static/js/787.f99b1002.chunk.js",
+    "static/media/bootstrap-icons.woff?": "/react_firebase_blog/static/media/bootstrap-icons.66b7720f4a230f1b0341.woff",
+    "static/media/bootstrap-icons.woff2?": "/react_firebase_blog/static/media/bootstrap-icons.64ed46b247405068ca60.woff2",
+    "index.html": "/react_firebase_blog/index.html",
+    "main.23b97ab5.css.map": "/react_firebase_blog/static/css/main.23b97ab5.css.map",
+    "main.2f971ea9.js.map": "/react_firebase_blog/static/js/main.2f971ea9.js.map",
+    "787.f99b1002.chunk.js.map": "/react_firebase_blog/static/js/787.f99b1002.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.23b97ab5.css",
+    "static/js/main.2f971ea9.js"
+  ]
+}
